@@ -73,7 +73,7 @@ export default function CustomerDetailPage({ params }: { params: Promise<{ id: s
       console.error(e);
       alert("Excel download failed");
     }
-    setExporting(null);
+    setExporting(false);
   };
 
   if (loading) return <div className="p-8 text-center text-slate-400 text-lg font-medium animate-pulse">Loading...</div>;
