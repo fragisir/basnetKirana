@@ -20,8 +20,8 @@ async function connectToDatabase() {
     const opts = {
       bufferCommands: false,
     };
-    cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
-      console.log("Connected to MongoDB: ", MONGODB_URI.split('@')[1]);
+    cached.promise = mongoose.connect(MONGODB_URI!, opts).then((mongoose) => {
+      console.log("Connected to MongoDB: ", MONGODB_URI!.split('@')[1]);
       return mongoose;
     }).catch(err => {
       console.error("MongoDB Connection Error: ", err);
