@@ -30,7 +30,7 @@ export default function LoginPage() {
             <Store size={32} />
           </div>
           
-          <h1 className="text-2xl font-extrabold text-slate-900 mb-1">Pasal Udhaar</h1>
+          <h1 className="text-2xl font-extrabold text-slate-900 mb-1">BASNET KHHADNYA BIKRI</h1>
           <p className="text-sm text-slate-500 font-medium mb-8">Enter your 4-digit PIN to login</p>
 
           <form onSubmit={handleLogin} className="space-y-6">
@@ -68,7 +68,7 @@ export default function LoginPage() {
           </form>
           
           <p className="mt-8 text-xs text-slate-400 font-medium">
-            Basnet Khadnya Bikri Sasta
+            BASNET KHHADNYA BIKRI
           </p>
         </div>
       </div>

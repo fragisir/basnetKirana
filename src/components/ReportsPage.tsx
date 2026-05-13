@@ -14,8 +14,8 @@ export default function ReportsPage({ customers, transactions }: { customers: an
     try {
       const ExcelJS = (await import('exceljs')).default;
       const workbook = new ExcelJS.Workbook();
-      workbook.creator = 'Pasal Udhaar';
-      workbook.lastModifiedBy = 'Pasal Udhaar';
+      workbook.creator = 'BASNET KHHADNYA BIKRI';
+      workbook.lastModifiedBy = 'BASNET KHHADNYA BIKRI';
       workbook.created = new Date();
 
       // 1. Customer Balances Sheet
@@ -137,7 +137,7 @@ export default function ReportsPage({ customers, transactions }: { customers: an
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `Pasal_Udhaar_Full_Report_${new Date().toISOString().split('T')[0]}.xlsx`;
+      a.download = `BASNET_KHHADNYA_BIKRI_Full_Report_${new Date().toISOString().split('T')[0]}.xlsx`;
       a.click();
     } catch (e) {
       console.error(e);
@@ -161,11 +161,11 @@ export default function ReportsPage({ customers, transactions }: { customers: an
       doc.setTextColor(255, 255, 255);
       doc.setFontSize(22);
       doc.setFont('helvetica', 'bold');
-      doc.text("PASAL UDHAAR", 14, 20);
+      doc.text("BASNET KHHADNYA BIKRI", 14, 20);
       
       doc.setFontSize(10);
       doc.setFont('helvetica', 'normal');
-      doc.text("Basnet Khadnya Bikri Sasta • Credit Statement", 14, 28);
+      doc.text("BASNET KHHADNYA BIKRI • Credit Statement", 14, 28);
       doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 14, 34);
 
       // Summary
@@ -197,7 +197,7 @@ export default function ReportsPage({ customers, transactions }: { customers: an
         footStyles: { fillColor: [254, 226, 226], textColor: [153, 27, 27], fontStyle: 'bold' },
       });
 
-      doc.save(`Pasal_Udhaar_Statement_${new Date().toISOString().split('T')[0]}.pdf`);
+      doc.save(`BASNET_KHHADNYA_BIKRI_Statement_${new Date().toISOString().split('T')[0]}.pdf`);
     } catch (e) {
       console.error(e);
       alert("Error exporting PDF");

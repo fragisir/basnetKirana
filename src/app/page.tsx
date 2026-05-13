@@ -54,7 +54,7 @@ export default function DashboardPage() {
         <div className="relative z-10">
           <div className="flex items-center gap-2 mb-1">
             <Store size={18} />
-            <span className="text-sm font-semibold opacity-90">Basnet Khadnya Bikri Sasta</span>
+            <span className="text-sm font-semibold opacity-90">BASNET KHHADNYA BIKRI</span>
           </div>
           <div className="mt-4 grid grid-cols-2 gap-4">
             <div>

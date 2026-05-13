@@ -60,8 +60,7 @@ export function SplashScreen() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-8 text-center"
           >
-            <h1 className="text-4xl font-black uppercase tracking-[0.2em]">Pasal Udhaar</h1>
-            <p className="text-blue-200 mt-2 font-medium tracking-widest uppercase text-sm">Basnet Khadnya Bikri Sasta</p>
+            <h1 className="text-4xl font-black uppercase tracking-[0.2em] text-center">BASNET KHHADNYA BIKRI</h1>
           </motion.div>
 
           <motion.div 

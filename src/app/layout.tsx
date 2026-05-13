@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Pasal Udhaar | BASNET KHADNYA BIKRI SASTA',
+  title: 'BASNET KHHADNYA BIKRI',
   description: 'Manage shop credit easily',
   manifest: '/manifest.json',
 };

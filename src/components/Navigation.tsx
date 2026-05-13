@@ -28,8 +28,7 @@ export function Navigation() {
               <Store size={22} />
             </div>
             <div>
-              <h1 className="text-base font-extrabold text-slate-900 tracking-tight">Pasal Udhaar</h1>
-              <p className="text-xs font-semibold text-slate-500">Basnet Khadnya</p>
+              <h1 className="text-base font-extrabold text-slate-900 tracking-tight">BASNET KHHADNYA BIKRI</h1>
             </div>
           </div>
         </div>
