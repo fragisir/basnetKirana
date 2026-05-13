@@ -66,7 +66,7 @@ export default function NewCustomerPage() {
               required
               value={formData.name}
               onChange={e => setFormData({...formData, name: e.target.value})}
-              className="input-field pl-11 text-base"
+              className="input-field !pl-11 text-base"
               placeholder="उदा. राम बहादुर"
             />
           </div>
@@ -82,7 +82,7 @@ export default function NewCustomerPage() {
               required
               value={formData.phone}
               onChange={e => setFormData({...formData, phone: e.target.value})}
-              className="input-field pl-11 text-base"
+              className="input-field !pl-11 text-base"
               placeholder="९८XXXXXXXX"
             />
           </div>
@@ -98,7 +98,7 @@ export default function NewCustomerPage() {
               required
               value={formData.address}
               onChange={e => setFormData({...formData, address: e.target.value})}
-              className="input-field pl-11 text-base"
+              className="input-field !pl-11 text-base"
               placeholder="उदा. काठमाडौं-१५"
             />
           </div>
@@ -113,7 +113,7 @@ export default function NewCustomerPage() {
               rows={3}
               value={formData.note}
               onChange={e => setFormData({...formData, note: e.target.value})}
-              className="input-field pl-11"
+              className="input-field !pl-11"
               placeholder="ग्राहकको बारेमा केही थप विवरण..."
             ></textarea>
           </div>

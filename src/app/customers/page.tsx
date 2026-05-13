@@ -51,7 +51,7 @@ export default function CustomersPage() {
           placeholder="ग्राहक खोज्नुहोस्... (Search by name or phone)"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className="input-field pl-12 text-base"
+          className="input-field !pl-12 text-base"
         />
       </div>
 

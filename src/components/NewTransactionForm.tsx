@@ -227,7 +227,7 @@ export default function NewTransactionForm({ customers }: { customers: any[] }) 
             min="1"
             value={formData.amount}
             onChange={e => setFormData({...formData, amount: e.target.value})}
-            className="input-field pl-14 text-3xl font-extrabold text-primary"
+            className="input-field !pl-14 text-3xl font-extrabold text-primary"
             placeholder="0"
           />
         </div>
@@ -264,7 +264,7 @@ export default function NewTransactionForm({ customers }: { customers: any[] }) 
               rows={3}
               value={formData.itemDetails}
               onChange={e => setFormData({...formData, itemDetails: e.target.value})}
-              className="input-field pl-11"
+              className="input-field !pl-11"
               placeholder="चामल, तेल, दाल..."
             ></textarea>
           </div>
@@ -280,8 +280,8 @@ export default function NewTransactionForm({ customers }: { customers: any[] }) 
             type="text" 
             required
             value={formData.nepaliDate}
-            onChange={e => setFormData({...formData, nepaliDate: e.target.value})}
-            className="input-field pl-11 text-base"
+            readOnly
+            className="input-field !pl-11 text-base bg-slate-50 text-slate-500 cursor-not-allowed"
             placeholder="२०८३/०१/१५"
           />
         </div>

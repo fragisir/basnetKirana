@@ -41,7 +41,7 @@ export default function TransactionsPage() {
           placeholder="ग्राहक वा सामान खोज्नुहोस्... (Search)" 
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="input-field pl-12 text-base"
+          className="input-field !pl-12 text-base"
         />
       </div>
 
