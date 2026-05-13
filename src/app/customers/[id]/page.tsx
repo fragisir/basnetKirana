@@ -95,13 +95,21 @@ export default function CustomerDetailPage({ params }: { params: Promise<{ id: s
             <p className="text-sm text-slate-500 font-medium">ग्राहक विवरण • Customer Details</p>
           </div>
         </div>
-        <button 
-          onClick={exportExcel}
-          disabled={exporting}
-          className="bg-green-50 text-green-700 px-3 py-2 rounded-xl text-xs font-bold border border-green-200 flex items-center gap-2 active:scale-95 transition-all disabled:opacity-50"
-        >
-          {exporting ? '...' : <><FileSpreadsheet size={16} /> Excel</>}
-        </button>
+        <div className="flex gap-2">
+          <Link 
+            href={`/customers/${id}/edit`}
+            className="bg-blue-50 text-blue-700 px-3 py-2 rounded-xl text-xs font-bold border border-blue-200 flex items-center gap-2 active:scale-95 transition-all"
+          >
+            Edit
+          </Link>
+          <button 
+            onClick={exportExcel}
+            disabled={exporting}
+            className="bg-green-50 text-green-700 px-3 py-2 rounded-xl text-xs font-bold border border-green-200 flex items-center gap-2 active:scale-95 transition-all disabled:opacity-50"
+          >
+            {exporting ? '...' : <><FileSpreadsheet size={16} /> Excel</>}
+          </button>
+        </div>
       </div>
 
       {/* Balance Card */}
